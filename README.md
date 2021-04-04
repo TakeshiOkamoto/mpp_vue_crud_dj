@@ -1,7 +1,7 @@
 # Django + Vue CLI(Vue.js + Axios)でCRUDのサンプルプロジェクト
   
 DEMO    
-[https://www.petitmonte.com/django/vue-crud/](https://www.petitmonte.com/django/vue-crud/)  
+[https://www.petitmonte.com/ai/vue-crud/](https://www.petitmonte.com/ai/vue-crud/)  
   
 [mpp_vue_crud_djの意味]  
 mpp = My Practice Project  
