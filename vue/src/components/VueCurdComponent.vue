@@ -121,6 +121,9 @@ export default {
     // ---------------------  
     run_ajax: function(method, url, data) {
       
+      axios.defaults.xsrfCookieName = 'csrftoken';
+      axios.defaults.xsrfHeaderName = "X-CSRFToken";
+      
       axios({
         method  : method,
         baseURL : url,
@@ -129,7 +132,7 @@ export default {
           // JSON
           'Content-Type': 'application/json',
           // CSRFトークン 
-          'X-CSRFToken': document.querySelector('meta[name="csrf-token"]').getAttribute('content') 
+          //'X-CSRFToken': document.querySelector('meta[name="csrf-token"]').getAttribute('content') 
         }
       })
       .then(response  => {
